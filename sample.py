@@ -47,4 +47,5 @@ if Num[0] != 0:
         Index += 1
         Answer += Index
 
+#出力
 print(Answer)
