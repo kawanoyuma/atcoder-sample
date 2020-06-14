@@ -1,19 +1,8 @@
-#116-B（Collatz Problem）
-a = []
-s = input()
-s = int(s)
-a.append(s)
+#169-A（Multiplication1）
 
-i = 0
-while i <= 1000000:
-    n = a[-1]
-    n = int(n)
-    if n % 2 == 0:
-        C = n / 2
-    else:
-        C = n * 3 + 1
-    if C in a:
-        a.append(C)
-        break
-    a.append(C)
-print(len(a))
+Input = input().split()
+A = int(Input[0])
+B = int(Input[1])
+AB = A * B
+
+print(AB)
