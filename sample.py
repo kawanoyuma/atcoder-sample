@@ -1,14 +1,12 @@
-#184-B (Quizzes)
+#183-B (Billiards)
 
-NX = input().split()
-S = list(input())
-N = int(NX[0])
-X = int(NX[1])
-P = X
-for i in range(N):
-    if S[i] == "o":
-        P += 1
-    else:
-        if P!=0:
-            P -= 1
-print(P)
+Input = input().split()
+Sx = int(Input[0])
+Sy = int(Input[1])
+Gx = int(Input[2])
+Gy = int(Input[3])
+X = Gx - Sx
+X /= Sy + Gy
+X *= Sy
+X += Sx
+print(X)
