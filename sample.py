@@ -1,12 +1,8 @@
-#183-B (Billiards)
+#189-A (Slot)
 
-Input = input().split()
-Sx = int(Input[0])
-Sy = int(Input[1])
-Gx = int(Input[2])
-Gy = int(Input[3])
-X = Gx - Sx
-X /= Sy + Gy
-X *= Sy
-X += Sx
-print(X)
+Input = input()
+InputList = list(Input)
+if InputList[0] == InputList[1] and InputList[0] == InputList[2]:
+    print("Won")
+else:
+    print("Lost")
